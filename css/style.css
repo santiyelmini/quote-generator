@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --green: #67c9b4;
+    --white: #fff;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+}
+
+.quoteContainer {
+    width: 600px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectTitle {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.quoteText {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.quoteAuthor {
+    align-self: flex-end;
+    font-style: italic;
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.quoteIcon {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.quoteIcon:last-child {
+    align-self: flex-end;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e9e9e9;
+}
+
+.featureIcon {
+    font-size: 25px;
+    color: var(--green);
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid var(--green);
+    cursor: pointer;
+    transition: 200ms background-color;
+}
+
+.featureIcon:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.newquoteBtn {
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    color: var(--white);
+    border: none;
+    background-color: var(--green);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 200ms transform;
+}
+
+.newquoteBtn:hover {
+    transform: scale(1.05);
+}
+
+.newquotebtnLoading {
+    background-color: #b6efe2;
+    cursor: wait;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .quoteContainer {
+        padding: 20px;
+    }
+}
+
