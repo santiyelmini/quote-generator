@@ -34,6 +34,19 @@ copyBtn.addEventListener("click", copyQuote)
 
 function copyQuote() {
     navigator.clipboard.writeText(quoteText.innerText)
+    Toastify({
+        text: "Quote copied",
+        duration: 1000,
+        newWindow: true,
+        close: false,
+        gravity: "bottom",
+        position: "center",
+        stopOnFocus: true,
+        style: {
+            background: "#21c09d",
+        },
+        onClick: function(){}
+    }).showToast();
 }
 
 const twitterBtn = document.querySelector(".bxl-twitter")
